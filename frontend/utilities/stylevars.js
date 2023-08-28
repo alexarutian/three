@@ -1,37 +1,22 @@
 import { StyleSheet } from "react-native";
 
-const goldColor = "#D58A24";
-const redColor = "#BA1B10";
-const greenColor = "#525B2C";
-const beigeColor = "#F0D2A8";
-const lightBeigeColor = "#F9EDDC";
-const grayColor = "#D6D6D6";
+// coolor themes
+const engineeringOrange = "#BA2D0B";
+const honeydewGreen = "#D5F2E3";
+const cambridgeBlue = "#73BA9B";
+const racingGreen = "#003E1F";
+const nightBlack = "#01110A";
+const wolfGray = "#D6D6D6";
 const offWhite = "#FCF6EE";
 
-// coolor themes
-const blueTheme = "#8DA9C4";
-const greenTheme = "#59A96A";
-const darkGreenTheme = "#3C493F";
-const redTheme = "#B97375";
-const transparentGreenTheme = "rgba(60, 73, 63, 0.3)";
-const moreTransparentGreenTheme = "rgba(60, 73, 63, 0.1)";
-const lightGrayTheme = "#e9e9e9";
-
 export const colors = {
-  goldColor,
-  redColor,
-  greenColor,
-  beigeColor,
-  lightBeigeColor,
-  grayColor,
+  engineeringOrange,
+  honeydewGreen,
+  cambridgeBlue,
+  racingGreen,
+  nightBlack,
+  wolfGray,
   offWhite,
-  blueTheme,
-  darkGreenTheme,
-  redTheme,
-  transparentGreenTheme,
-  moreTransparentGreenTheme,
-  lightGrayTheme,
-  greenTheme,
 };
 
 export const leftFlexColumn = {
