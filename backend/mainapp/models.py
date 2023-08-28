@@ -7,6 +7,7 @@ from django.dispatch import receiver
 
 import uuid
 
+
 class User(AbstractUser):
     email = models.EmailField(unique=True)
     # token = models.UUIDField()
@@ -14,18 +15,18 @@ class User(AbstractUser):
     def __str__(self):
         return self.email
 
-#     @classmethod
-#     def get_token(cls):
-#         return uuid.uuid4()
+    @classmethod
+    def get_token(cls):
+        return uuid.uuid4()
 
 
-# # router to listen to models' actions, if function registered will go through hoop first
-# @receiver(pre_save, sender=User)
-# def user_saved(sender, instance, *args, **kwargs):
-#     instance.token = instance.get_token()
+# router to listen to models' actions, if function registered will go through hoop first
+@receiver(pre_save, sender=User)
+def user_saved(sender, instance, *args, **kwargs):
+    instance.token = instance.get_token()
 
 
-class Priority(models.Model):
+class Task(models.Model):
     name = models.CharField(max_length=200)
     date = models.DateField(auto_now_add=True)
     completed = models.BooleanField(default=False)
